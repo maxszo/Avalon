@@ -28,6 +28,16 @@ struct PlayerListView: View {
                     .buttonStyle(.borderedProminent)
                 }
                 .padding()
+                
+                NavigationLink(destination: PlayerSelectionView()) {
+                    Text("Démarrer une partie")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                        .padding()
+                }
             }
             .navigationTitle("Joueurs")
         }
